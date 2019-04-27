@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/more_information_u_need"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_terms_of_use"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+
+                        android:textStyle="bold"
+                        android:text="Terms of "/>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:text="Use "/>
+
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/login_signup_heading_separator_user"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_privacy_plicy"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:textSize="16sp"
+
+                        android:text="Privacy "/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:textColor="@color/colorGray"
+                        android:text="Policy "/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/login_signup_heading_separator_user"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_faq"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"
+
+                        android:textStyle="bold"
+                        android:text="Frequently "/>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:text="Asked "/>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:text="Questions "/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/login_signup_heading_separator_user"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_promise"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:textSize="16sp"
+
+                        android:text="Our "/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+
+                        android:textColor="@color/colorGray"
+                        android:text="Promise "/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/login_signup_heading_separator_user"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

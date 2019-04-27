@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/bottom_menu_home_icon_user" />
+    <item android:id="@+id/action_explore"
+        android:title="@string/explore"
+        android:icon="@drawable/bottom_menu_explore_icon_user" />
+    <item android:id="@+id/action_category"
+        android:title="@string/categories"
+        android:icon="@drawable/categories_icon_70px"/>
+    <item android:id="@+id/action_feed"
+        android:title="@string/feed"
+        android:icon="@drawable/bottom_menu_feed_icon_user" />
+    <item android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/bottom_menu_profile_icon_user" />
+</menu>

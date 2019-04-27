@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_privacy_is"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="3dp">
+
+
+                    <LinearLayout
+                        android:padding="10dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/overview"
+                            android:textColor="@color/colorGray"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:src="@drawable/red_bg"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGray"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/information_covered"/>
+
+
+
+                        <LinearLayout
+
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/circular_dot"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/signIn_uii"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/circular_dot"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/uses_of_services"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/circular_dot"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/social_media"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/circular_dot"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/other_sources"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/how_we_use"/>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/authorized_user"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/corliorate"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/legal"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Security"/>
+
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/security"/>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/email"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/cookies"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/information_from"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/unauthorized"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/retension_of_personal"/>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/legal_basics"/>
+
+
+                            <LinearLayout
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/access"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/portability"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/correction"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/restriction_of"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/objection"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/withdrawl_of"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/third_party_link"/>
+
+
+                            <LinearLayout
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/children"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/data_transfer"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/complaints"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/circular_dot"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="@string/notification_of"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/about_us"
+                            android:textColor="@color/colorGray"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:src="@drawable/red_bg"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGray"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/geo"/>
+
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGray"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/deals_nyc"/>
+
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorGray"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/if_u_have"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/information_covered"
+                            android:textColor="@color/colorGray"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:src="@drawable/red_bg"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGray"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/this_privacy"/>
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

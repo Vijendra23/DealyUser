@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProfileBg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/location_map_pin_icon_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Falony square, New York"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_location"
+            app:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"/>\
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="4"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:background="@color/colorLightGray">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="3.5"
+            android:layout_gravity="center"
+            android:hint="@string/enter_your_search"
+            android:paddingLeft="8dp"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rectangular_bg"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight=".5"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/search_icon_button_user"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:textColor="@color/color_txt"
+                    android:textStyle="bold"
+                    android:text="@string/recommended_deals"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/login_signup_heading_separator_user" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/view_pager"
+                        android:elevation="0dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutDots"
+                        android:src="@drawable/side_menu_shadow_sep_user" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:textColor="@color/color_txt"
+                    android:textStyle="bold"
+                    android:text="@string/recommended_venders"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/login_signup_heading_separator_user" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutDots1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:elevation="8dp"
+                        android:layout_below="@+id/view_pager1"
+                        android:gravity="center"
+                        android:orientation="horizontal"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutDots1"
+                        android:src="@drawable/side_menu_shadow_sep_user" />
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:textColor="@color/color_txt"
+                    android:textStyle="bold"
+                    android:text="@string/people_near_you"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/login_signup_heading_separator_user" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:elevation="8dp"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutDots2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:elevation="8dp"
+                        android:layout_below="@+id/view_pager2"
+                        android:gravity="center"
+                        android:orientation="horizontal"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutDots2"
+                        android:src="@drawable/side_menu_shadow_sep_user" />
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

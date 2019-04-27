@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+
+            >
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="Category:Food"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivTop"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:background="@drawable/deal_details_cover_image_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCategory" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivTop">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constFollow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constMoreDeals"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/civFollow"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/deal_preview_follow_icon_user"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvFollow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/follow"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/civFollow"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/civFollow" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/colorLightGray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/civFollow"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constMoreDeals"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constAbout"
+                    app:layout_constraintStart_toEndOf="@+id/constFollow"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    >
+
+
+                    <ImageView
+
+                        android:id="@+id/civMoreDeals"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/more_deals_icon_user"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvMoreDeals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:maxLines="1"
+                        android:text="@string/moredeals"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/civMoreDeals" />
+
+                   <View
+                        android:id="@+id/view2"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                       android:background="@color/colorLightGray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/civMoreDeals"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constShare"
+                    app:layout_constraintStart_toEndOf="@+id/constMoreDeals"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+
+                        android:id="@+id/civAbout"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/preview_about_icon_user"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/view3"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="@string/about"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/civAbout"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/civAbout" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+
+                        android:background="@color/colorLightGray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/civAbout"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constAbout"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+
+                        android:id="@+id/civShare"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:background="@drawable/share_icon_user"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="@string/share"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/civShare" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorDarkRed"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tvBurgerDeal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/burger_deal_20_20"
+                                    android:textAllCaps="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <View
+                                    android:layout_width="100dp"
+                                    android:layout_height="2dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/colorLightRed" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivValidFor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Valid for:"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt"/>
+
+                                <TextView
+                                    android:id="@+id/tvValidFor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 person per deal"
+                                    android:fontFamily="@font/montserrat"/>
+
+
+                            </LinearLayout>
+
+                           <!-- <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/shape_dotted" />-->
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivValidOn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Valid on:"
+                                    android:textColor="@color/color_txt"
+                                    android:fontFamily="@font/montserrat"/>
+
+                                <TextView
+                                    android:id="@+id/tvValidOn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Friday and Saturday"/>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivValidFrom"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Offer Validity from:"
+                                    android:textColor="@color/color_txt"
+                                    android:fontFamily="@font/montserrat"/>
+
+                                <TextView
+                                    android:id="@+id/tvValidFrom"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="March 13th, 2019"
+                                    android:fontFamily="@font/montserrat"/>
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:maxLines="1"
+                                    android:text="To:"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt"/>
+
+                                <TextView
+                                    android:id="@+id/tvTo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="march 30th, 2019:"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt"/>
+
+
+                            </LinearLayout>
+
+
+                          <!--  <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/colorLightGray" />-->
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tvValidityDetails"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/validity_details"
+                                    android:textAllCaps="true"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+
+
+                                    />
+
+                                <View
+                                    android:layout_width="100dp"
+                                    android:layout_height="2dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/colorLightRed" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTimings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Timings:"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt"/>
+
+                                <TextView
+                                    android:id="@+id/tvTimings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="2:30pm to7:30pm" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivNotValid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Not Valid for:"
+                                    android:fontFamily="@font/montserrat"
+
+                                    android:textColor="@color/color_txt"/>
+
+                                <TextView
+                                    android:id="@+id/tvNotValid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="More Than one person"/>
+
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+
+                                <ImageView
+
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/feed_like_icon_active_user" />
+
+                                <LinearLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:weightSum="2">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/shape_rectangle_red"
+                                        android:gravity="center"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:text="74 Left"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/colorWhite" />
+
+                                    <TextView
+                                        android:id="@+id/tv_redeem"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/shape_rectangle_dark_red"
+                                        android:gravity="center"
+                                        android:paddingTop="10dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:paddingBottom="10dp"
+                                        android:text="Redeem"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/colorWhite" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="View More Deals And Offer"
+                        android:fontFamily="@font/montserrat"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"/>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvHow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGray"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="How To Use The Offer"
+                            android:fontFamily="@font/montserrat"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+
+
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="15dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="To Access Daly"
+                                    android:textColor="@color/color_txt"
+
+                                    android:fontFamily="@font/montserrat"
+                                    />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Please Note"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/color_txt" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="Please present"
+                                    android:textColor="@color/color_txt" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvCancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGray"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Cancellation Policy"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+
+
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="15dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Deal can be"
+                                    android:textColor="@color/color_txt"/>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="After getting the code"
+                                    android:textColor="@color/color_txt" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvRedemption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGray"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Redemption Locations"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+
+
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="15dp">
+
+
+                           <!-- <ImageView
+                                android:id="@+id/iv_map"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@mipmap/ic_launcher" />-->
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_below="@+id/ll_following_followers"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="4dp"
+                                card_view:cardCornerRadius="10dp"
+                                card_view:cardElevation="6dp">
+
+
+                                <fragment
+                                    android:id="@+id/map"
+                                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"/>
+
+                            </android.support.v7.widget.CardView>>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Burgar Bar"
+                                    android:textColor="@color/colorDarkRed"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="101, Main Street"
+
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New York USA"
+
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/btnViewMap"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/button_rectangle_dark_red"
+                                    android:text="View Map"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorWhite"
+
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card4">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvThings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGray"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Things To Remember"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textStyle="bold"
+
+
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Deal up for"
+                                    android:textColor="@color/color_txt" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/side_menu_dotted_sep_user" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/arrow_bullet_user" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Present code at"
+                                    android:textColor="@color/color_txt"/>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

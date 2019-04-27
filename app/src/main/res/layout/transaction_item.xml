@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/deal_details_cover_image_user"
+                app:siRadius="6dp"
+                app:siBorderWidth="6dp"
+                app:siBorderColor="@android:color/white"
+                app:siSquare="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDarkRed"
+                        android:text="Burger deal 20/20"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deal Price $5.99"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/calendar_icon_user"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="March 14,2019"/>
+
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="|"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

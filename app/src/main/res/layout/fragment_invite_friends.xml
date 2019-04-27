@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorProfileBg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spread_the_world"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:background="@drawable/rectangular_bg"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_frinds_email"/>
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email2"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangular_bg">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_frinds_email"
+                android:background="@null"
+                android:textSize="14sp"
+
+                android:inputType="textPassword"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email3"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+
+            android:inputType="textPassword"
+            android:background="@drawable/rectangular_bg"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_frinds_email"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email4"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:background="@drawable/rectangular_bg"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_frinds_email"/>
+        <TextView
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email5"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:background="@drawable/rectangular_bg"
+            android:layout_marginTop="5dp"
+            android:hint="@string/enter_your_frinds_email"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_click_to_login"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/button_dark_red_background">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/button_ellipse_arrow_icon_user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="@string/send_invites"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

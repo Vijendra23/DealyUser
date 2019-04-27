@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="14dp"
+    android:paddingLeft="14dp"
+    android:paddingBottom="14dp"
+    android:paddingRight="14dp">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+
+            android:id="@+id/iv_deal_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/deal_details_cover_image_user"
+            app:siRadius="6dp"
+            app:siBorderWidth="6dp"
+            app:siBorderColor="@android:color/white"
+            app:siSquare="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_deal_image"
+            android:textColor="@color/colorDarkRed"
+            android:text="Burger deal 20/20"/>
+
+
+            <TextView
+                android:id="@+id/tv_deal_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_toRightOf="@+id/iv_deal_image"
+                android:layout_marginLeft="5dp"
+                android:text="Get 20% off on a Double Cheese Burger "
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/iv_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_deal_price"
+                android:layout_toRightOf="@+id/iv_deal_image"
+                android:src="@drawable/feed_shadow_sep_user"/>
+
+
+            <ImageView
+                android:id="@+id/iv_feed_like_icon_active_user"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_toRightOf="@+id/iv_deal_image"
+                android:src="@drawable/feed_like_icon_active_user"/>
+
+
+            <TextView
+                android:id="@+id/tv_Liked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_toRightOf="@+id/iv_feed_like_icon_active_user"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:text="Liked"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

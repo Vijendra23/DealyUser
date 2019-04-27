@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_name">DealyUser</string>
+    <string name="skip">SKIP</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="new_user_sign_up_now">NEW USER\? SIGN-UP NOW! </string>
+    <string name="signin">SIGN IN</string>
+    <string name="already_member">Already a Member? Sign-in</string>
+
+
+    <string name="or">OR</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="password">Password</string>
+    <string name="i_accept_the">I accept the</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="location">Location</string>
+    <string name="email">Email</string>
+    <string name="click_here">CLICK HERE</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="click_to_login">CLICK TO LOGIN</string>
+    <string name="to_complete_the">to complete the sign-up process</string>
+    <string name="please_varify_your">Please varify your email</string>
+    <string name="sent_to_your">sent to your inbox</string>
+    <string name="a_confirmation_mail">A confirmation email has been </string>
+    <string name="successfully_created">created successfully!</string>
+    <string name="your_account_has">Your account has been </string>
+    <string name="congratulation">CONGRATULATIONS!</string>
+    <string name="become_a_member">BECOME A MEMBER</string>
+    <string name="signin_using_fb">SIGN-IN USING FACEBOOK</string>
+    <string name="already_member_sign_in">ALREADY A MEMBER?\ SIGN-IN</string>
+    <string name="sign_up_now">SIGN-UP NOW</string>
+    <string name="enter_your_search">Enter your search item</string>
+    <string name="recommended_deals">RECOMMENDED DEALS</string>
+    <string name="recommended_venders">RECOMMENDED VENDORS</string>
+    <string name="burger_bar">Burger Bar</string>
+    <string name="deal_posted">Deal Posted : 25</string>
+    <string name="view">VIEW</string>
+    <string name="our_words_of_commitment">OUR WORDS OF COMMITMENT</string>
+
+
+    <string name="home">HOME</string>
+    <string name="feed">FEED</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="explore">EXPLORE</string>
+    <string name="live">Live</string>
+    <string name="redeem">Redeem</string>
+    <string name="live_deals">LIVE DEALS</string>
+    <string name="trending_deals">TRENDING DEALS</string>
+    <string name="hot_deals">HOT DEALS</string>
+    <string name="location_deals">LOCATION DEALS</string>
+    <string name="deals_end">DEALS END</string>
+    <string name="profile">PROFILE</string>
+
+
+    <string name="transactions">TRANSACTIONS</string>
+
+    <string name="settings">SETTINGS</string>
+
+    <string name="edit_profile">EDIT PROFILE</string>
+
+    <string name="support">SUPPORT</string>
+
+    <string name="more">MORE</string>
+    <string name="deals_and_offers">DEALS &amp; OFFERS</string>
+
+
+    <string name="enter_subject">Enter subject</string>
+    <string name="get_in_touch">GET IN TOUCH</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="reset_password">RESET PASSWORD</string>
+
+    <string name="enter_detail_below">ENTER DETAILS BELOW TO EDIT YOUR PROFILE </string>
+
+
+    <string name="re_enter_password">Re enter Password</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+
+
+    <string name="all_popular_details">All popular details and offers</string>
+    <string name="hot">Hot</string>
+    <string name="trending">Trending</string>
+    <string name="turn_on_location_service">Turn on location services</string>
+    <string name="submit_feedback">SUBMIT FEEDBACK</string>
+
+    <string name="message">Message</string>
+    <string name="enter_message">Enter message</string>
+    <string name="subject">Subject</string>
+    <string name="get_20_pecent_off">GET 20% OFF!</string>
+    <string name="on_a_whopper">ON A WHOPPER</string>
+    <string name="left_50">50 LEFT</string>
+
+
+    <string name="more_information_u_need">MORE INFORMATION YOU NEED</string>
+
+
+    <string name="burger_king">Burger King</string>
+    <string name="deals_u_have_bought">DEALS YOU HAVE BOUGHT </string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="action">Action</string>
+    <string name="check_all">Check All</string>
+
+    <string name="reset_link_sent">RESET LINK SENT</string>
+    <string name="password_reset_link_sent">Password reset link is sent</string>
+    <string name="sucsesfully_to_your_registered">successfully to your registered </string>
+    <string name="email_address">email address</string>
+    <string name="please_check_the_same">please check the same and</string>
+    <string name="reset_your_password">reset your password and...</string>
+    <string name="block">BLOCK</string>
+    <string name="unfollow">UNFOLLOW</string>
+
+
+    <string name="your_privacy_is">YOUR PRIVACY IS IMPORTANT TO US</string>
+
+
+    <string name="cookies">Cookies</string>
+    <string name="access">Access</string>
+    <string name="erasure">Erasure</string>
+    <string name="correction">Correction</string>
+    <string name="objection">Objection</string>
+    <string name="children">Children</string>
+    <string name="notification_of">Notification of Changes</string>
+    <string name="complaints">Complaints</string>
+    <string name="about_us">About Us</string>
+    <string name="data_transfer">Data Transfer</string>
+    <string name="third_party_link">Third Party Links and Information Collection and Use by Our Users</string>
+    <string name="withdrawl_of">Withdrawal of Consent</string>
+    <string name="restriction_of">Restriction of lirocessing to Storage Only</string>
+    <string name="retension_of_personal">Retention of Personal Information
+
+Legal Basis for Processing Your Information
+
+Your Rights</string>
+    <string name="unauthorized">Unauthorized Accounts</string>
+    <string name="information_from">Information from Third liarties</string>
+    <string name="security">Security
+
+Tracking Technologies and Online Advertising
+
+Choice/Opt-out</string>
+    <string name="social_media">Social Media</string>
+    <string name="other_sources">Other Sources</string>
+    <string name="legal">Legal lirocess</string>
+    <string name="this_privacy">This privacy policy covers personal information, including any information we collect, use and share from you, as described further below. This privacy policy applies to all websites in the Dealy NYC undertakings, our services, communications, and our mobile applications (collectively, the “Services”). This privacy policy does not cover how our Clients may use or share data that they collect using our Services.
+
+When you obtain a Service from us, your personal information will be collected, used, and shared consistent with the provisions of this privacy policy as well as the following addendums related to particular services offered by Dealy NYC, which are also a part of this privacy policy:
+
+Addendum (reserved for future use)
+
+</string>
+
+    <string name="corliorate">Corliorate Reorganizations</string>
+    <string name="authorized_user">Authorized Users</string>
+    <string name="how_we_use">How We Use Your Information
+
+Sharing of Information</string>
+    <string name="uses_of_services">Use of Services, Website Visits, Alilis and Suliliort</string>
+    <string name="signIn_uii">Signing Uli for Services; User Information</string>
+    <string name="information_covered">Information Covered by this Privacy Policy
+
+Information We Collect from You</string>
+    <string name="or_282">or 282 11th Ave., #608. NY. NY 10001. For the purposes of the REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), Dealy NYC has no European local representatives. </string>
+    <string name="notification_email">notifications@dealynyc.com </string>
+    <string name="if_u_have">If you have any questions about this privacy policy or the practices described herein, you may contact </string>
+    <string name="deals_nyc">Dealy NYC (Dealy NYC hereafter) and our subsidiaries (“we,” “us” or “Dealy NYC”) are an online platform, for natural persons (consumers) and undertakings (businesses) (collectively, “our Users” or “Clients” hereafter) to find each other and the best geo-determined deals. While catering to the needs of our Clients, we exercise prudence in protecting the personal information of our Clients who use our website, mobile applications or services. This privacy policy provides details about how your personal information is collected, shared and used by us. To learn more about Dealy NYC, visit: www.dealynyc.com.</string>
+    <string name="geo">Geo - Advertising – doing business as Dealy NYC – is a US based deal and discovery platform, piloting business concept in the NYC market. The proprietary delivery platform utilizes its users’ phone locations and preferences to curate the best real-time offers available across a multitude of businesses such as restaurants, spas, and places of shopping and entertainment in your neighborhood. </string>
+
+
+    <string name="inform_us"> Inform us within 30 days of the purchase and we will refund the money – no-questions-asked.</string>
+    <string name="how_ever_in">However, in case the purchase doesn’t match up to your expectations or if you were unable to use the voucher within the time frame or perhaps you changed your mind, don’t worry.</string>
+    <string name="we_wantt">We want you to have a good experience each time you avail a Dealy offer. Our retail partners have been selected after careful consideration.</string>
+    <string name="every_deal">Every deal that is featured on Dealy is backed by the Dealy promise. You can rest assured that your purchases on Dealy are safe and will be honored.</string>
+
+
+    <string name="brows_throght">Browse through the categories; filter your search based on price, popularity and customer rating. Once you narrow down and select your experience, complete the transaction using one of the payment methods. You will receive a voucher code which can be redeemed at the merchant’s location.</string>
+    <string name="yes_u_can">Yes. You can download the app free of charge on Google Play Store and iOS App Store.</string>
+    <string name="anyone_who">Anyone who has the app can avail of the offers. You just need to register on the app using your Email ID and mobile number. Alternatively you can sign in using your Facebook, Gmail or Twitter account.</string>
+    <string name="dealy_helps">Dealy helps you explore the best deals in the city enabling you to enjoy great experiences at great pries. The deals delivery platform uses your phone location to curate real-time offers available across a wide range of categories in and around your area.</string>
+    <string name="people_near_you">PEOPLE NEAR YOU</string>
+    <string name="view_profile">VIEW PROFILE</string>
+
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="faq_short">FAQ</string>
+
+
+    <string name="how_does">How does it work?</string>
+    <string name="who_can">Who can use it?</string>
+    <string name="is_it">Is it free?</string>
+    <string name="how_do_i">How do I select the best deal?</string>
+    <string name="are_there">Are there any hidden costs?</string>
+    <string name="how_long">How long is each offer for?</string>
+    <string name="we_would">We would love to chat with you and hear your thoughts. Please reach out to us on support@dealynyc.com</string>
+    <string name="how_can">How can I share my feedback or ideas with Dealy?</string>
+    <string name="you_can">You can cancel the order within 30 days of purchase. We will refund the money.</string>
+    <string name="i_changed">I changed my mind, can I cancel the purchase order?</string>
+    <string name="offer_vary">Offers vary. While some offers are available for a few hours only, others could be valid for a day or two. There are new offers that are added in real time. Dealy will notify you about the latest offers in your neighborhood so that you can take maximum advantage.</string>
+    <string name="there_are">There are no hidden costs. The amount mentioned is inclusive of all taxes.
+
+     The expiry date and terms and conditions are mentioned in every offer.</string>
+
+
+    <string name="overview">Overview</string>
+    <string name="portability">Portability</string>
+    <string name="legal_basics">Legal Basis for Processing Your Information</string>
+
+    <string name="terma_of_use">TERMS OF USE</string>
+    <string name="please_read">Please read the following Terms and Conditions of use carefully before using this website. All users of this site agree that access to and use of this website is subject to the following terms and conditions and other applicable law.</string>
+    <string name="the_offer">The offer cannot be combined with any other offer</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="every_voucher">Every voucher has an expiry date which is specifically mentioned on the voucher and at the time purchase.</string>
+    <string name="to_avail">To avail the deal, please share the voucher code with the retail partner.
+ </string>
+
+    <string name="voucher_can_be">Vouchers can be redeemed only after due verification of the customer (inc.customer ID)</string>
+    <string name="booking_researvation">Bookings, reservations and amendments are subject to availability.
+ </string>
+    <string name="the_voucher_must">The voucher must be redeemed in a single visit unless specified otherwise.</string>
+    <string name="taxes">Taxes on the services or products rendered or sold is the sole responsibility of the merchant.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+
+    <string name="send_invites">SEND INVITES</string>
+    <string name="spread_the_world">SPREAD THE WORLD</string>
+    <string name="enter_your_frinds_email">Enter your friend\'s email</string>
+
+    <string name="send">SEND</string>
+    <string name="oops">OOPS!</string>
+    <string name="your_loaction_sevice">Your Location Service is off!</string>
+    <string name="to_view_the_best">To view the best deal around you</string>
+    <string name="turn_on_the_location">TURN ON THE LOCATION</string>
+
+
+    <string name="email1">Email Address #01:</string>
+    <string name="email2">Email Address #02:</string>
+    <string name="email3">Email Address #03:</string>
+    <string name="email4">Email Address #04:</string>
+    <string name="email5">Email Address #05:</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="stores_you_follow">STORES YOU FOLLOW!</string>
+    <string name="follow">FOLLOW</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="present_this_code_at">Present this code at the vendor location to</string>
+    <string name="redeem_the_deal">Redeem the Deal!</string>
+    <string name="view_more_deals">VIEW MORE DEALS</string>
+    <string name="your_deal_order_is_confirmed">YOUR DEAL IS CONFIRMED</string>
+
+    <string name="your_deal_is_confirmed">your deal is confirmed</string>
+    <string name="see_what_your_friends_are_buying">SEE WHAT YOUR FRIENDS ARE BUYING</string>
+
+
+    <string name="moredeals">More Deals</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="burger_deal_20_20">Burger Deal 20/20</string>
+    <string name="validity_deal">Validity Deal</string>
+    <string name="validity_details">Validity Details</string>
+    <string name="order_confirmation">ORDER CONFIRMATION</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="dummy_txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</string>
+
+    <string name="burger_bar1">BURGER BAR</string>
+    <string name="deal_you_liked_the_most">DEAL YOU LIKED THE MOST</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="vendor_profile">VENDOR PROFILE</string>
+
+</resources>

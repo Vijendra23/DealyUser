@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:src="@drawable/location_deals_map_pin_graphics_user"/>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDarkRed"
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/oops"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorDarkRed"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:text="@string/your_loaction_sevice"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_view_the_best"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_turn_on_the_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/button_dark_red_background">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center"
+            android:src="@drawable/location_deals_ellipse_map_pin_icon_user"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/turn_on_the_location"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

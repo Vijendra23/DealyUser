@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorProfileBg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_in_touch"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/color_txt"
+            android:text="@string/subject"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/rectangular_bg"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:hint="@string/enter_subject"/>
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/color_txt"
+            android:text="@string/message"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangular_bg">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/enter_message"
+                android:background="@null"
+                android:gravity="left|top"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_click_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/button_user">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="110dp"
+                android:textColor="@android:color/white"
+                android:text="@string/submit_feedback"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

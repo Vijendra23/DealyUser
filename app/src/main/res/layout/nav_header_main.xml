@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_photo"
+        app:civ_border_width="2dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/side_menu_profile_image_user"
+        app:civ_border_color="@color/colorDarkRed"/>
+
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JASON SMITH"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        />
+
+
+
+  <TextView
+        android:id="@+id/iv_horizontal_line"
+        android:layout_width="45dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorRed"/>
+
+
+
+    <ImageView
+        android:id="@+id/iv_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:src="@drawable/side_menu_shadow_sep_user"/>
+
+
+
+
+
+
+
+  <!--  <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android.studio@android.com" />-->
+
+</LinearLayout>

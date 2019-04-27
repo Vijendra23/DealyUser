@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login_background_user">
+
+
+    <ImageView
+        android:src="@drawable/login_signup_logo_user"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulation"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_signup_heading_separator_user"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_account_has"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/successfully_created"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/a_confirmation_mail"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/sent_to_your"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/please_varify_your"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/to_complete_the"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/ll_click_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_user">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginLeft="120dp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/click_to_login"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

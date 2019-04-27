@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <!-- <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"/>-->
+
+
+
+    <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/about_vendor_menu_thumbnail_user"/>
+
+
+
+
+   <!-- <TextView
+         android:id="@+id/tv_message"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/iv_product_image"
+         android:text="message"
+         android:layout_marginRight="10dp"
+         android:padding="5dp"
+         android:background="@color/white"
+         android:textColor="@color/grey"
+         android:textSize="18sp" />-->
+
+
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/right_arrow"/>
+
+
+    <ImageView
+        android:id="@+id/iv_left_arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/leftarrow"/>
+
+
+    <ImageView
+        android:id="@+id/iv_multiply"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="4dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/multiply"/>
+
+
+</RelativeLayout>
+
+
+

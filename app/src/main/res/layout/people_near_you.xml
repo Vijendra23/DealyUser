@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_burger_bar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                card_view:civ_border_color="@color/colorDarkRed"
+                card_view:civ_border_width="2dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/explore_ppl_near_you_img01_user"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JASON STRONG"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/cv_burger_bar"
+                android:textColor="@color/colorDarkRed"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text= "@string/view_profile"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_grey_background"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        android:layout_marginLeft="20dp"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/cv_burger_king"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                card_view:civ_border_color="@color/colorDarkRed"
+                card_view:civ_border_width="2dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/explore_ppl_near_you_img02_user"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JENNA SIMS"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/cv_burger_bar"
+                android:textColor="@color/colorDarkRed"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"/>
+
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="@string/view_profile"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_grey_background"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

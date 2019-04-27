@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/colorProfileBg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_notification"
+        android:layout_margin="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/parent_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.github.siyamed.shapeimageview.RoundedImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/img"
+                    android:src="@drawable/deal_details_cover_image_user"
+                    app:siRadius="6dp"
+                    app:siBorderWidth="6dp"
+                    app:siBorderColor="@android:color/white"
+                    app:siSquare="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_alignParentLeft="true"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorDarkRed"
+                            android:text="Burger deal 20/20"/>
+
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/close"/>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/your_deal_is_confirmed"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="@string/view"
+                            android:gravity="center"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_red_background"
+                            android:layout_marginTop="10dp"
+                            android:textSize="13sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_view"
+                            android:fontFamily="@font/montserrat"
+
+                            />
+
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

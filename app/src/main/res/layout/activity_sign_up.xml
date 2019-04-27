@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/signup_background_user">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/iv_top_icon"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/login_signup_logo_user" />
+
+            <TextView
+                android:id="@+id/tv_become_a_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_top_icon"
+                android:gravity="center_horizontal"
+                android:text="@string/become_a_member"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_become_a_member"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/login_signup_heading_separator_user" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/rl_top">
+
+            <ImageView
+                android:id="@+id/iv_user_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/signup_user_icon_user"/>
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_user_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Full Name"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:singleLine="true"
+                android:fontFamily="@font/montserrat"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_user_icon"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rl_user_name">
+
+            <ImageView
+                android:id="@+id/iv_email_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/signup_email_icon_user" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_email_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:hint="Email"
+                android:fontFamily="@font/montserrat"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_email_icon"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rl_email">
+
+            <ImageView
+                android:id="@+id/iv_mobile_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/signup_mobile_icon_user"/>
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_mobile_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/montserrat"
+                android:hint="Mobile Number"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_mobile_icon"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rl_mobile">
+
+            <ImageView
+                android:id="@+id/iv_location_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/signup_map_icon_user"/>
+
+            <EditText
+                android:id="@+id/edit_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_location_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/montserrat"
+                android:hint="Location"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_location_icon"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rl_location">
+
+            <ImageView
+                android:id="@+id/iv_password_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/signup_password_icon_user"/>
+
+            <EditText
+                android:id="@+id/edit_pasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_password_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/montserrat"
+                android:hint="Password"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_password_icon"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rl_password">
+
+            <ImageView
+                android:id="@+id/iv_confirm_password_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/signup_password_icon_user"/>
+
+            <EditText
+                android:id="@+id/edit_confirm_pasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_confirm_password_icon"
+                android:backgroundTint="@android:color/transparent"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/montserrat"
+                android:hint="Confirm Password"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_confirm_password_icon"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_terms_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rl_confirm_password">
+
+
+            <CheckBox
+                android:id="@+id/cb_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:text="@string/i_accept_the"/>
+
+            <TextView
+                android:id="@+id/tv_terms_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@android:color/white"
+                android:layout_alignBaseline="@+id/cb_accept"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/cb_accept"/>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_terms_condition"
+                android:layout_alignLeft="@+id/tv_terms_condition"
+                android:layout_alignRight="@+id/tv_terms_condition"
+                android:layout_toRightOf="@+id/cb_accept"
+                android:background="@color/colorWhite" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_sign_up_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rl_terms_condition"
+            android:background="@drawable/button_red_background"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/iv_sign_up_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/button_ellipse_arrow_icon_user" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/iv_sign_up_icon"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/sign_up_now"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_already_member_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/already_member_sign_in"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+
+

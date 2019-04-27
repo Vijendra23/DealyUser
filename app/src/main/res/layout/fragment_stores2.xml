@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorProfileBg"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGray"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="@string/stores_you_follow"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view_burgur_bar"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/cv_burger_bar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                card_view:civ_border_color="@color/colorDarkRed"
+                card_view:civ_border_width="2dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/explore_recommended_vendor_img01_user"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/burger_bar"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/cv_burger_bar"
+                android:textColor="@color/colorDarkRed"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deal_posted"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"/>
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="@string/view"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_red_background"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_burgur_king"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        android:layout_marginLeft="20dp"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"
+            android:orientation="vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/cv_burger_king2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                card_view:civ_border_color="@color/colorDarkRed"
+                card_view:civ_border_width="2dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/explore_recommended_vendor_img02_user"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/burger_king"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/cv_burger_bar"
+                android:textColor="@color/colorDarkRed"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deal_posted"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"/>
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="@string/view"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/button_red_background"
+                android:layout_marginTop="15dp"
+                android:textSize="13sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_burgur_bar2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/cv_burger_bar2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    card_view:civ_border_color="@color/colorDarkRed"
+                    card_view:civ_border_width="2dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/explore_recommended_vendor_img01_user"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/burger_bar"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/cv_burger_bar"
+                    android:textColor="@color/colorDarkRed"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deal_posted"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
+
+
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="@string/view"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_red_background"
+                    android:layout_marginTop="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_burgur_king2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="4dp"
+            android:layout_marginLeft="20dp"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/cv_burger_king"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    card_view:civ_border_color="@color/colorDarkRed"
+                    card_view:civ_border_width="2dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/explore_recommended_vendor_img02_user"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/burger_king"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/cv_burger_bar"
+                    android:textColor="@color/colorDarkRed"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deal_posted"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"/>
+
+
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="@string/view"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_red_background"
+                    android:layout_marginTop="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

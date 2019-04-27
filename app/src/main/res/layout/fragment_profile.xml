@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGray"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="JSON SMITH"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/tv_heading"
+        android:paddingBottom="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:id="@+id/fl_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_profile_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/deal_details_cover_image_user" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_user_photo"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="150dp"
+                    android:src="@drawable/side_menu_profile_image_user"
+                    app:civ_border_color="@color/colorDarkRed"
+                    app:civ_border_width="2dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_edit_photo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/camera_image_back"
+                    android:padding="2dp"
+                    android:src="@drawable/edit_profile_camera_btn_icon_user" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_trans_favorite_stores_fpllowed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl_profile"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_transactions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:id="@+id/tv_transaction_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:text="63"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_transaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="TRANSACTIONS"
+                        android:textColor="@color/color_txt"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_vertical_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGray"
+                    android:gravity="center" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_favorites_deals"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:id="@+id/tv_favorite_deals_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:text="03"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_favorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="FAVORITE DEALS"
+                        android:textColor="@color/color_txt"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_vertical_line2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGray" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_stores_followed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_store_follwed_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_background"
+                        android:gravity="center"
+                        android:text="04"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_store_followed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="STORES FOLLOWED"
+                        android:textColor="@color/color_txt"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_following_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_trans_favorite_stores_fpllowed"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/light_red_bg2"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Following (4)"
+                    android:textColor="@android:color/white"
+                    app:fontFamily="@font/montserrat" />
+
+
+                <TextView
+                    android:id="@+id/tv_followers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_red_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Followers (4)"
+                    android:textColor="@android:color/white"
+                    app:fontFamily="@font/montserrat" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_following_followers"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="4dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tv_personal_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="PERSONAL INFORMATION"
+                        android:textColor="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_personal_info"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/arrow_bullet_user" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.3"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Full Name"
+                                android:textColor="@color/color_txt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text=":"
+                                android:textColor="@color/color_txt" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_marginLeft="20dp"
+                                android:text="Jason Smith"
+                                android:textColor="@color/color_txt" />
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_arrow_bullet"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/arrow_bullet_user" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.3"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Gender"
+                                android:textColor="@color/color_txt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text=":"
+                                android:textColor="@color/color_txt" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_marginLeft="15dp"
+                                android:text="Male"
+                                android:textColor="@color/color_txt" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_date_of_birth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/arrow_bullet_user" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.3"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Date of Birth"
+                                android:textColor="@color/color_txt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text=":"
+                                android:textColor="@color/color_txt" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_marginLeft="15dp"
+                                android:text="August 9th, 1995"
+                                android:textColor="@color/color_txt" />
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_mobile_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/arrow_bullet_user" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.3"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Mobile No."
+                                android:textColor="@color/color_txt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text=":"
+                                android:textColor="@color/color_txt" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_marginLeft="15dp"
+                                android:text="19089790897"
+                                android:textColor="@color/color_txt" />
+
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:src="@drawable/side_menu_dotted_sep_user"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/arrow_bullet_user" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.3"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Email"
+                                android:textColor="@color/color_txt" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text=":"
+                                android:textColor="@color/color_txt" />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_marginLeft="15dp"
+                                android:text="jason.smith@mail.com"
+                                android:textColor="@color/color_txt" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_time_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="User Timeline"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/cv_profile"
+                android:textColor="@color/colorDarkRed" />
+
+
+            <TextView
+                android:id="@+id/tv_horizontal_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_time_line"
+                android:background="@color/colorDarkRed"/>
+
+
+            <TextView
+                android:id="@+id/tv_deal_bought"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Deal Bought"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_horizontal_line"
+                android:textSize="16sp"
+                android:textColor="@color/color_txt" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/liveDataRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_deal_bought"
+                android:layout_marginBottom="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

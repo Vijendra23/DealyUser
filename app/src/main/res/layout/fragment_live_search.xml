@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!-- <LinearLayout
+        android:background="@color/colorGray"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/location_map_pin_icon_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Falony square, New York"/>
+
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorGray"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/location_map_pin_icon_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Falony square, New York"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_location"
+            app:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="4"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:background="@color/colorLightGray">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.3"
+            android:layout_gravity="center"
+            android:hint="Whopper"
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rectangular_bg"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".7"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/search_icon_button_user"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

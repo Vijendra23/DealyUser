@@ -1,0 +1,302 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav">
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_my_transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="My Transactions"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/color_txt" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Edit Profile"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Settings"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_invite_frnds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet4"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_invite_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Invite Friends"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_faqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet5"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_faqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="FAQs"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+    <LinearLayout
+        android:id="@+id/ll_support_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet6"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_support_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Support/Feedback"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet7"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="More"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/side_menu_dotted_sep_user" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="sideBarNav"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_arrow_bullet8"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/arrow_bullet_user" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Logout"
+            android:textColor="@color/color_txt"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

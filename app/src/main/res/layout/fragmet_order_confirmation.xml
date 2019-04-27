@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_deal_order_is_confirmed"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat"
+        android:background="@color/colorGray"
+        android:padding="12dp"
+        android:layout_gravity="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <!--  <LinearLayout
+
+                android:layout_width="match_parent"
+                android:background="@color/colorGray"
+                android:orientation="horizontal"
+                android:layout_height="60dp">
+
+
+
+
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="vertical">
+                            <com.github.siyamed.shapeimageview.RoundedImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:id="@+id/img"
+                                android:src="@drawable/order_confirmation_main_image_user"
+                                app:siRadius="6dp"
+                                android:scaleType="fitCenter"                        app:siBorderWidth="6dp"
+                                app:siSquare="true"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorDarkRed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BURGER DEAL 20/20"/>
+
+
+                        <ImageView
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/dark_red_bg"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/ll_my_transactions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_arrow_bullet1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/arrow_bullet_user"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/tv_my_transactions"
+                                android:layout_width="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:textSize="13dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Valid for     :   "
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="1 Person"
+                                android:fontFamily="@font/montserrat"
+                                android:textSize="13dp"
+
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/side_menu_dotted_sep_user"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="sideBarNav"
+                            android:layout_marginLeft="30dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/arrow_bullet_user"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/montserrat"
+                                android:textSize="13dp"
+
+                                android:text="Valid on     :   "
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Tuesday"
+                                android:fontFamily="@font/montserrat"
+                                android:textSize="13dp"
+
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/side_menu_dotted_sep_user"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="sideBarNav"
+                            android:layout_marginLeft="30dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/arrow_bullet_user"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Validity      :    "
+                                android:textColor="@android:color/black"
+                                android:fontFamily="@font/montserrat"
+                                android:textSize="13dp"
+
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/montserrat"
+                                android:textSize="13dp"
+
+                                android:text="March 13,2019 to March 30th 2019"
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/side_menu_dotted_sep_user"
+                            />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="sideBarNav"
+                            android:layout_marginLeft="30dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/arrow_bullet_user"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/montserrat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Timing      :    "
+                                android:textSize="13dp"
+
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="1:30 PM to 4:30 PM"
+                                android:textSize="13dp"
+                                android:fontFamily="@font/montserrat"
+
+                                android:textColor="@android:color/black"
+                                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/order_confirmation_deal_code_box_user"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DEAL CODE"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/montserrat"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                android:padding="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BUR2020"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="25dp"
+                                android:fontFamily="@font/montserrat"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:padding="10dp"/>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/present_this_code_at"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/colorDarkRed"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/redeem_the_deal"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_view_more_deals"
+                            android:elevation="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bottom_curve">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:layout_height="wrap_content"
+                                android:text="@string/view_more_deals"
+                                android:fontFamily="@font/montserrat"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="14dp"/>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

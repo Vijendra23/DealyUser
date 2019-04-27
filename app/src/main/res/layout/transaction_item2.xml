@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="14dp"
+    android:paddingLeft="14dp"
+    android:paddingBottom="14dp"
+    android:paddingRight="14dp">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+
+            android:id="@+id/iv_deal_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/deal_details_cover_image_user"
+            app:siRadius="6dp"
+            app:siBorderWidth="6dp"
+            app:siBorderColor="@android:color/white"
+            app:siSquare="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_deal_image"
+            android:textColor="@color/colorDarkRed"
+            android:text="Burger deal 20/20"/>
+
+
+            <TextView
+                android:id="@+id/tv_deal_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_toRightOf="@+id/iv_deal_image"
+                android:layout_marginLeft="5dp"
+                android:text="Deal Price $5.99"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/iv_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/tv_deal_price"
+                android:layout_toRightOf="@+id/iv_deal_image"
+                android:src="@drawable/feed_shadow_sep_user"/>
+
+
+            <ImageView
+                android:id="@+id/iv_date_picker"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_deal_image"
+                android:src="@drawable/calendar_icon_user"/>
+
+
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_toRightOf="@+id/iv_date_picker"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:text="March 14,2019"/>
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_date"
+                android:layout_toRightOf="@+id/iv_date_picker"
+                android:layout_alignLeft="@+id/tv_date"
+                android:textSize="14sp"
+                android:text="| Thursday"/>
+
+
+
+            <ImageView
+                android:id="@+id/iv_vertical_line"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_toRightOf="@+id/tv_date"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/tv_day"
+                android:src="@drawable/feed_vertical_sep_user"/>
+
+
+           <!-- <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:textColor="@color/colorDarkRed"
+                android:background="@drawable/textview_circle_bg"
+                android:layout_toRightOf="@+id/iv_vertical_line"
+                android:textSize="12dp"
+                android:text="%"/>-->
+
+
+            <ImageView
+                android:id="@+id/tv_percent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:textColor="@color/colorDarkRed"
+                android:background="@drawable/discount"
+                android:layout_toRightOf="@+id/iv_vertical_line" />
+
+
+            <TextView
+                android:id="@+id/tv_view_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_shadow"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkRed"
+                android:layout_toRightOf="@+id/tv_percent"
+                android:text="VIEW CODE"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

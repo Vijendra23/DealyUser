@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="#000"
+        android:id="@+id/bottonNavBar"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="bottom">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:layout_weight="1"
+                android:button="@null"
+
+                android:padding="10dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/bottom_menu_home_icon_user"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/rb_home"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/bottom_menu_explore_icon_user"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/rb_explore"
+                android:text="@string/explore"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/rb_categories"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/bottom_menu_categories_icon_user"
+                android:textColor="@color/colorWhite"
+                android:text="@string/categories"/>
+
+
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/rb_feed"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/bottom_menu_feed_icon_user"
+                android:textColor="@color/colorWhite"
+                android:text="@string/categories"/>
+
+
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:id="@+id/rb_profile"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textSize="12sp"
+                android:drawableTop="@drawable/bottom_menu_profile_icon_user"
+                android:textColor="@color/colorWhite"
+                android:text="@string/categories"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dynamicContent"
+        android:orientation="vertical"
+        android:layout_marginBottom="56dp"
+        android:background="@color/colorWhite"
+        android:layout_gravity="bottom">
+    </LinearLayout>-->
+
+
+
+
+
+</LinearLayout>
